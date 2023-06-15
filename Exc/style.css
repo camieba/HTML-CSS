@@ -1,0 +1,43 @@
+@charset "UTF-8";
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+} 
+
+/* Shorthand font 
+-> font-style -> font-weight -> font-size -> font-family
+
+ex - font: normal 500 16px verdana, geneva, tahoma, sans-serif; */ 
+
+body {background-image: linear-gradient(to right, #3CA6A6, #026773, #024959)
+}
+ 
+main {background-color: #F2E3D5;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px #f2e3d59d;
+        width: 750px;
+        padding: 10px;
+        margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #012E40;
+    text-shadow: 1px 1px 2px #012e406d;
+}
+ 
+h2 {
+    color: #026773;
+}
+
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+
+

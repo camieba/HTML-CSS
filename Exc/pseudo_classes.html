@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+        }
+
+        div {background-color: mediumpurple;
+            text-align: center;
+            border: 1px solid white;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            }
+        div#d2 {background-color: darkblue;
+                color: white;
+
+        }
+
+        div#d2:hover {background-color: black;
+
+        }
+
+        div:hover {
+                    background-color: black;
+        }
+        
+        a {color: darkslategrey;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        a::before {content: '→';
+
+        }
+
+        a:hover {text-decoration: underline;
+                color: darkblue;
+
+        }
+
+    </style>
+</head> 
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <h1>Personalizando links</h1>
+    <p>
+    <ul>
+        <li><a href="https://www.instagram.com/c__mila/">Acesse meu Instagram</a></li>
+        <li><a href="https://twitter.com/c__mila">Também estou no Twitter</a></li>
+        <li><a href="https://www.facebook.com/">Me acompanha no Facebook</a></li>
+
+
+    </ul></p>
+</body>
+</html>
