@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Tabela</title>
+    <style>
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        table {
+                width: 500px;
+                border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 24px;
+            padding: 8px;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px
+        }
+
+        .cnome, .cdade {background-color: rgba(153, 78, 153, 0.456);
+            
+
+        }
+
+        .csexo, .cprof {background-color: rgb(169, 111, 198);
+                        
+
+        }
+
+        tr.zebra:nth-child(even) {background-color: lightgray;
+
+        }
+
+        #segundo {
+                    
+                    height: 50px;
+                    padding: 20px;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mais uma tabela</h1>
+    <table>
+        <colgroup>
+                <col class="cnome">
+                <col class="csexo">  
+                <col class="cdade">   
+                <col class="cprof">
+        </colgroup> 
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camila</td>
+                <td>F</td>
+                <td>31</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Yuri</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>29</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Sandra</td>
+                <td>F</td>
+                <td>48</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>M</td>
+                <td>59</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Nutricionista</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <h1>Tabelas responsivas</h1>
+  <div id="container">
+      <table>
+        <caption>Tabelas responsivas</caption>
+        <thead id="segundo">
+            <tr>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="zebra">
+                    <td>TV 40"</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>05</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>16</td>
+                    <td>04</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>04</td>
+                </tr>
+                <tr class="zebra">
+                    <td>Playstation</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>16</td>
+                    <td>12</td>
+                    <td>16</td>
+                    <td>06</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>03</td>
+                </tr>
+                <tr class="zebra">
+                    <td>Amazon echo</td>
+                    <td>08</td>
+                    <td>04</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>09</td>
+                    <td>08</td>
+                    <td>18</td>
+                    <td>15</td>
+                </tr>
+                <tr class="zebra">
+                    <td>iPad Mini</td>
+                    <td>05</td>
+                    <td>08</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>16</td>
+                    <td>16</td>
+                </tr>
+                <tr class="zebra">
+                    <td>Laptop</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>07</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>15</td>
+                    <td>08</td>
+                </tr>
+                <tr class="zebra">
+                    <td>Samsung Galaxy SE</td>
+                    <td>10</td>
+                    <td>02</td>
+                    <td>06</td>
+                    <td>03</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>08</td>
+                    <td>04</td>
+                    <td>08</td>
+                    <td>10</td>
+                    <td>16</td>
+                    <td>15</td>
+                </tr>
+                <tr class="zebra">
+                    <td>Home Theater</td>
+                    <td>12</td>
+                    <td>04</td>
+                    <td>09</td>
+                    <td>13</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>04</td>
+                    <td>10</td>
+                    <td>06</td>
+                    <td>09</td>
+                    <td>07</td>
+                    <td>05</td>
+                </tr>
+            </tbody>
+      </table>
+  </div>
+
+
+</body>
+</html>
