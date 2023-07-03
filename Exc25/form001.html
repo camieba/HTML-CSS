@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        form {
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <!-- O action serve para indicar o arquivo que irá captar os dados -->
+    <form action="cadastro.php" method="POST">
+        <p><label for="firstname">Nome:</label> 
+             <input type="text" name="nome" id="firstname"></p>
+         
+        <p><label for="lastname">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="lastname"></p>
+    <!-- A label é importantíssima para relacionar o objeto com o campo preenchido -->        
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
