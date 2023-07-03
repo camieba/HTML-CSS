@@ -33,11 +33,32 @@
             <input type="reset" value="Limpar">
         </p>
 
-
-
-
-
     </form>
     
+    <h1>Formulário de dados pessoais </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="i_nome">Nome</label>
+                <input type="text" name="nome" id="i_nome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="i_mail">Email</label>
+                <input type="email" name="email" id="i_mail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="i_tel">Telefone</label>
+                <input type="tel" name="telefone" id="i_tel" autocomplete="tel" required pattern="^[0-9]{2}[0-9]{4}-[0-9]{4}$">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+        <!-- Estudar mais sobre RegEx (regular expressions)-->
+    </form>
+
 </body>
 </html>
