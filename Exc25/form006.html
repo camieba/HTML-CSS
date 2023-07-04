@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+   <style>
+
+    main {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        background-color: blanchedalmond;
+        border-radius: 6px;
+        width: 55vw;
+        padding: 3px 0px;
+        
+    }
+
+   </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="i_num1">Número 1:</label>
+            <input type="number" name="num1" id="i_num1" min="0" max="50" required oninput="i_soma.innerHTML = Number(i_num1.value) + Number(i_num2.value)">
+        </p>  
+        <p>
+            <label for="i_num2">Número 2:</label>
+            <input type="number" name="num2" id="i_num2" min="0" max="50" required oninput="i_soma.innerHTML = Number(i_num1.value) + Number(i_num2.value)">
+        </p>      
+        <p>
+            <label for="i_soma">Soma:</label>
+            <output id="i_soma">0</output>
+        </p>
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <main>
+            <p>
+                <label for="i_sats">Satisfação</label>
+                <input type="range" name="sats" id="i_sats" min="0" max="10" value="5" oninput="i_val.innerHTML = Number(i_sats.value)">
+                <output id="i_val">5</output>
+                </p>
+                <p><input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+        </main>
+        <article>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="i_ano">Data de nascimento:</label>
+                    <input type="number" name="ano" id="i_ano" min="1900" max="2023" oninput="calcIdade()">
+                </p>
+                <p>
+                    <label for="i_idade">Sua idade é:</label>
+                    <output id="i_idade">0</output>
+
+
+                </p>
+                <p><input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+
+        </article>
+
+</form>
+
+<script>
+    function calcIdade () {
+        let atual = new Date().getFullYear()
+        i_idade.innerHTML = Number(atual) - Number (i_ano.value)
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="M"><label for="masc">Masculino</label><br>
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+
+            <!-- O nome tem que estar igual para que seja possível desmarcar e/ou marcar só uma das opções -->
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="futebol"> <label for="futebol">Futebol</label><br> 
+            <input type="checkbox" name="nat" id="natacao"> <label for="natacao">Natação</label><br> 
+            <input type="checkbox" name="hand" id="handbol"> <label for="handbol">Handbol</label><br> 
+            <input type="checkbox" name="vol" id="volei"> <label for="volei">Volei</label><br>
+            <input type="checkbox" name="bas" id="basquete"> <label for="basquete">Basquete</label>
+
+        </fieldset>
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    <h1>Novo exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="i_cor">Cor:</label>
+            <input type="color" name="cor" id="i_cor" value="#ff56ff">
+        </p>
+
+        <p>
+            <label for="i_sats">Nível de satisfação</label>
+            <input type="range" name="satisfacao" id="i_sats" min="0" max="5" value="1">
+        </p>
+        <p>
+            <label for="i_foto">Foto de Perfil:</label>
+            <input type="file" name="foto" id="i_foto">
+        </p>
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+    
+</body>
+</html>
