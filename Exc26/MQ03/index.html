@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+      /* Configurações gerais */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        html, body {
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+                background-size: contain;
+                background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: yellow;
+            text-shadow: 1px 1px 0px white;
+            padding: 10px;
+            background-color: black;
+        }
+
+
+      /* Configurações retrato */
+        @media screen and (orientation: portrait) {
+            body {
+                    background: url(../MQ02/cev-portrait.jpg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: left bottom;
+
+                }
+
+        }
+
+
+      /* Configurações paisagem */
+        @media screen and (orientation: landscape) {
+            body {
+                background: url(../MQ02/cev-landscape.jpg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+    
+</body>
+</html>
