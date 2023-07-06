@@ -8,11 +8,11 @@
 
 html {
     background-color: #5f9ea0c0;
-    
 }
 
+
 header {
-    background-color: rgb(82, 135, 137);
+    background-color: #528789;
 }
 
 header > h1 {
@@ -46,7 +46,7 @@ menu > ul > li > a {
                     display: block;
                     padding: 8px;
                     text-decoration: none;
-                    background-color: rgb(115, 191, 194);
+                    background-color: #5f9ea0c0;
                     text-align: center;
                     color: white;
                     border-top: 2px solid white;
